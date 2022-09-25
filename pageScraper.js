@@ -9,9 +9,6 @@ const scraperObject = {
         await page.goto(this.url);
 
 
-
-
-
         let caminoPagePromise = (url) => new Promise(async (resolve, reject) => {
             console.log(url, 'page promise link caminos')
             let newPage = await browser.newPage();
@@ -21,7 +18,6 @@ const scraperObject = {
             })
             resolve(etapasUrls)
             await newPage.close()
-
         })
 
 
@@ -34,15 +30,12 @@ const scraperObject = {
             });
             resolve(etapasUrls)
             await newPage.close()
-
         })
 
         let alberguePagePromise = (url) => new Promise(async (resolve, reject) => {
                 console.log(url, 'page promise link albergue');
                 let newPage = await browser.newPage();
                 await newPage.goto(url);
-
-
 
                 const name = await findSingleEntry(newPage, '.page-header');
                 const address = await findSingleEntry(newPage,'.field-name-field-geo-address div.field-item' )
@@ -120,7 +113,6 @@ const scraperObject = {
 
                 });
 
-
                 resolve({
                     name,
                     address,
@@ -144,8 +136,9 @@ const scraperObject = {
         let caminoUrls = await page.$$eval('.pane-home-thumbs-caminos .pane-title a', links => {
             return links.map(l => ({url: l.href}))
         });
+
         // testing purposes
-        caminoUrls = [caminoUrls[5]];
+        //caminoUrls = [caminoUrls[5]];
 
         const etapaUrls = [];
         for (const camino of caminoUrls) {
@@ -162,7 +155,7 @@ const scraperObject = {
 
 
         const alberguesData = [];
-        for (albergueUrl of albergueUrls.slice(0, 3)) {
+        for (albergueUrl of albergueUrls) {
             const data = await alberguePagePromise(albergueUrl);
             alberguesData.push(data);
         }
@@ -174,7 +167,6 @@ const scraperObject = {
             .map(address => {
                 return alberguesData.find(albergue => albergue.address === address)
             })
-
 
         // TURN JS ARRAY OF OBJS INTO JSON
         const jsonAlberguesData = JSON.stringify(removedDupesAlberguesData);
