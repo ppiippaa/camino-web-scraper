@@ -1,0 +1,102 @@
+                // const name = await newPage.$eval('.page-header', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const address = await newPage.$eval('.field-name-field-geo-address div.field-item', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const town = await newPage.$eval('.field-name-field-localidad .field-items .field-item a', (link) => {
+                //     return link?.textContent ? link.textContent : null;
+                // });
+                // const phone = await newPage.$eval('.field-type-telephone .field-items .field-item a', (link) => {
+                //     return link?.textContent ? link.textContent : null;
+                // });
+                // const webUrl = await newPage.$eval('.group-albergue-contacto .field-name-field-web a', (link) => {
+                //     return link?.href ? link.href : null;
+                // });
+                // const bookingUrl = await newPage.$$eval('.field-name-booking-com-link  a', (link) => {
+                //     return link?.href ? link.href : null;
+                // });
+                // const locationInfoEs = await newPage.$eval('.field-name-field-localizacion .field-items .field-item', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const availability = await newPage.$eval('#bootstrap-panel-3-body .field-name-field-disponibilidad-meses-inclu .field-item', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const entryFrom = await newPage.$eval('#bootstrap-panel-3-body .field-name-field-hora-de-apertura- .field-item', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const coordinates = await newPage.$eval('.staticmap-link a', (link) => {
+                //     const [lat, long] = link.href.split('?q=')[1].split('%2C')
+                //     return link?.href ? {lat, long} : null;
+                // });
+                // const accommodation = await newPage.$$eval('.field-name-field-room-number tr', (elements) => {
+                //     const accom = elements.map(el => {
+                //         if (!el.lastElementChild.firstElementChild) {
+                //             return null
+                //         }
+                //
+                //         switch (
+                //             el.lastElementChild.firstElementChild
+                //                 .classList[1]
+                //             ) {
+                //             case 'glyphicons-bedroom-nightstand':
+                //                 return {
+                //                     type: 'room',
+                //                     numOfPlaces: parseInt(
+                //                         el.firstElementChild.textContent
+                //                     ),
+                //                 }
+                //             case 'glyphicons-user-structure':
+                //                 return {
+                //                     type: 'shared',
+                //                     numOfPlaces: parseInt(
+                //                         el.firstElementChild.textContent
+                //                     ),
+                //                 }
+                //
+                //             case 'glyphicons-home': {
+                //                 return {
+                //                     type: 'apartment',
+                //                     numOfPlaces: parseInt(
+                //                         el.firstElementChild.textContent
+                //                     ),
+                //                 }
+                //             }
+                //
+                //             default:
+                //                 return null
+                //         }
+                //     })
+                //         .filter((el) => el !== null)
+                //
+                //     return accom?.length ? accom : null;
+                //
+                // });
+                // const amenities = await newPage.$$eval('.field-item-gronze-albergue-servicios .field-subitem .field-label', (elements) => {
+                //     return Array.from(elements.map(el => el.textContent));
+                // });
+                // const camino = await newPage.$eval('.localidad-navigator ul li', (text) => {
+                //     return text?.textContent ? text.textContent : null;
+                // });
+                // const image = await newPage.$eval('.field-name-field-foto-principal-albergue picture source', (image) => {
+                //     return image?.srcset ? image.srcset : null;
+                // });
+                //
+                //
+                // resolve({
+                //     name,
+                //     address,
+                //     town,
+                //     phone,
+                //     webUrl,
+                //     bookingUrl,
+                //     locationInfoEs,
+                //     availability,
+                //     entryFrom,
+                //     coordinates,
+                //     accommodation,
+                //     amenities,
+                //     camino,
+                //     image
+                // });
+                // await newPage.close();

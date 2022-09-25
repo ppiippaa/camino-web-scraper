@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Residencia de peregrinos San Lázaro",
+    "address": "Rúa da Vesada, 2",
+    "town": "Santiago de Compostela",
+    "phone": null,
+    "webUrl": null,
+    "bookingUrl": null,
+    "locationInfo": "A la entrada, a 3,3 km de la catedral",
+    "availability": "Todo el año",
+    "entryFrom": "13:00",
+    "coordinates": {
+      "lat": "42.887560832318",
+      "long": "-8.513460159302"
+    },
+    "accommodation": [
+      {
+        "type": "shared",
+        "numOfPlaces": 80
+      }
+    ],
+    "amenities": [
+      "Cocina de uso libre",
+      "Microondas",
+      "Nevera",
+      "Lavadora y Secadora",
+      "Sábanas",
+      "Toallas",
+      "Taquillas individuales",
+      "Accesible a personas con movilidad reducida",
+      "Resguardo para bicicletas"
+    ],
+    "camino": "Camino Francés",
+    "image": "https://www.gronze.com/sites/default/files/styles/rect_220/public/foto/albergue/1521/santiago-lazaro-1.jpg?itok=30u7fSRq&timestamp=1660594289"
+  },
+  {
+    "name": "Albergue Seminario Menor",
+    "address": "Av. Quiroga Palacios, 2",
+    "town": "Santiago de Compostela",
+    "phone": "+34 881 031 768",
+    "webUrl": "http://www.alberguesdelcamino.com/",
+    "bookingUrl": "https://www.booking.com/hotel/es/albergue-seminario-menor.html?label=hotel_link&aid=357048",
+    "locationInfo": "Fuera del casco antiguo; a 1 km de la catedral",
+    "availability": "Del 1 de abril al 31 de octubre",
+    "entryFrom": "13:30",
+    "coordinates": {
+      "lat": "42.876648913302",
+      "long": "-8.537160158157"
+    },
+    "accommodation": [
+      {
+        "type": "shared",
+        "numOfPlaces": 169
+      },
+      {
+        "type": "room",
+        "numOfPlaces": 81
+      }
+    ],
+    "amenities": [
+      "Cocina de uso libre",
+      "Microondas",
+      "Nevera",
+      "Comidas",
+      "Lavadora y Secadora",
+      "Sábanas desechables",
+      "Toallas",
+      "Taquillas individuales",
+      "Accesible a personas con movilidad reducida",
+      "Resguardo para bicicletas cubierto"
+    ],
+    "camino": "Camino Francés",
+    "image": "https://www.gronze.com/sites/default/files/styles/rect_220/public/foto/albergue/1518/santiago-seminario-1.jpg?itok=w-EYwLz7&timestamp=1662660962"
+  },
+  {
+    "name": "Albergue Fin del Camino",
+    "address": "Rúa de Moscova, s/n",
+    "town": "Santiago de Compostela",
+    "phone": "+34 981 587 324",
+    "webUrl": "https://alberguefindelcamino.com/",
+    "bookingUrl": null,
+    "locationInfo": "A 200 m del camino y a 2,5 km de la catedral",
+    "availability": "De Semana Santa a mediados de octubre",
+    "entryFrom": "De 13:00 a 20:00",
+    "coordinates": {
+      "lat": "42.885449353779",
+      "long": "-8.523400425911"
+    },
+    "accommodation": [
+      {
+        "type": "shared",
+        "numOfPlaces": 112
+      }
+    ],
+    "amenities": [
+      "Cocina de uso libre",
+      "Microondas",
+      "Nevera",
+      "Lavadora y Secadora",
+      "Sábanas",
+      "Taquillas individuales con llave",
+      "Accesible a personas con movilidad reducida",
+      "Resguardo para bicicletas cubierto",
+      "Jardín"
+    ],
+    "camino": "Camino Francés",
+    "image": "https://www.gronze.com/sites/default/files/styles/rect_220/public/foto/albergue/1519/santiago-parroquial-1.jpg?itok=vrLLqIoy&timestamp=1656777709"
+  }
+]
