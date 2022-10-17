@@ -1,3 +1,5 @@
+// SCRAPES CAMINO DATA AND WRITES DATA TO ALBERGUES.JSON
+
 const fs = require("fs");
 const findSingleEntry = require('./selectorFunction');
 
@@ -70,14 +72,14 @@ const scraperObject = {
                                 ) {
                                 case 'glyphicons-bedroom-nightstand':
                                     return {
-                                        type: 'room',
+                                        typeOfAccommodation: 'room',
                                         numOfPlaces: parseInt(
                                             el.firstElementChild.textContent
                                         ),
                                     }
                                 case 'glyphicons-user-structure':
                                     return {
-                                        type: 'shared',
+                                        typeOfAccommodation: 'shared',
                                         numOfPlaces: parseInt(
                                             el.firstElementChild.textContent
                                         ),
@@ -85,7 +87,7 @@ const scraperObject = {
 
                                 case 'glyphicons-home': {
                                     return {
-                                        type: 'apartment',
+                                        typeOfAccommodation: 'apartment',
                                         numOfPlaces: parseInt(
                                             el.firstElementChild.textContent
                                         ),
@@ -147,7 +149,7 @@ const scraperObject = {
         }
 
         const albergueUrls = [];
-        for (etapaUrl of etapaUrls.slice(0, 1)) {
+        for (etapaUrl of etapaUrls) {
             const urls = await etapaPagePromise(etapaUrl);
             albergueUrls.push(...urls);
         }
